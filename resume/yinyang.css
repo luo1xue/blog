@@ -9,39 +9,26 @@ body{
     position: relative;
     margin: 100px auto;
 }
-.yinyang >.one{
-    width: 100px;
-    height: 100px;
+.yinyang::before{
+    content: "";
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    background: black;
+    background: white;
     position: absolute;
     top:50px ;
     left: 0;
+    border: 40px solid black;
    }
-   .yinyang >.one > .circle{
-   width: 20px;
-   height: 20px;
-   border-radius: 50%;
-   position:absolute;
-   left: 40px;
-   top: 40px;
-   background: white;
-   }
-   .yinyang >.two{
-       width: 100px;
-       height: 100px;
+   .yinyang::after{
+       content: "";
+       width: 20px;
+       height: 20px;
        border-radius: 50%;
-       background: white;
+       background: black;
        position: absolute;
        top:50px ;
        right: 0;
+       border: 40px solid white;
       }
-   .yinyang >.two > .circle{
-           width: 20px;
-           height: 20px;
-           border-radius: 50%;
-           position:absolute;
-           left: 40px;
-           top: 40px;
-           background: black;
-   }
+
